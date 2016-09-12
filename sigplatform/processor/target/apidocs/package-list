@@ -1,0 +1,7 @@
+com.log.processor
+com.log.processor.common
+com.log.processor.config
+com.log.processor.core
+com.log.processor.db
+com.log.processor.health
+com.log.processor.resources

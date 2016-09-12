@@ -1,0 +1,29 @@
+template: Hello, %s!
+defaultName: Sigtrak
+
+server:
+  applicationConnectors:
+  - type: http
+    port: 9900
+  adminConnectors:
+  - type: http
+    port: 9901
+
+mongo:
+  url: mongodb://localhost/log_processor
+
+job:
+  numJobs: 1
+
+file:
+  directory: /home/dinesh/Documents/newregressions
+  name: .log
+
+s3:
+  bucket: sigtrak-artifacts
+  key: log-processor/dev
+
+logging:
+  level: INFO
+  loggers:
+    "org.skife.jdbi.v2": INFO
